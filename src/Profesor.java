@@ -12,14 +12,14 @@ public final class Profesor extends Persona {
 		this.cedula = cedula;
 	}
 
-	public Profesor(String nombre, String apellido, String domicilio, int edad, String cedula) {
+	public Profesor(String nombre, String apellido, String domicilio, int edad) {
 		super(nombre, apellido, domicilio, edad);
 		
 	}
 	
 	
 	public void mostrarDatos() {
-		JOptionPane.showConfirmDialog(null, "Profesor \nNombre: " + getNombre() + " " + getApellido() + "\nDomicilio: "
+		JOptionPane.showMessageDialog(null, "Profesor \nNombre: " + getNombre() + " " + getApellido() + "\nDomicilio: "
 				+ getDomicilio() + "\nEdad: " + getEdad() + "\nCedula: " + getCedula());
 	}
 	

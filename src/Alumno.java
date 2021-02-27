@@ -12,12 +12,12 @@ public final class Alumno extends Persona {
 		this.matricula = matricula;
 	}
 
-	public Alumno(String nombre, String apellido, String domicilio, int edad, String matricula) {
+	public Alumno(String nombre, String apellido, String domicilio, int edad) {
 		super(nombre, apellido, domicilio, edad);
 	}
 
 	public void mostrarDatos() {
-		JOptionPane.showConfirmDialog(null, "ALUMNO \nNombre: " + getNombre() + " " + getApellido() + "\nDomicilio: "
+		JOptionPane.showMessageDialog(null, "ALUMNO \nNombre: " + getNombre() + " " + getApellido() + "\nDomicilio: "
 				+ getDomicilio() + "\nEdad: " + getEdad() + "\nMatricula: " + getMatricula());
 	}
 
